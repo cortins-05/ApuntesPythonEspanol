@@ -10,13 +10,13 @@ class B(A):
         super().__init__(A)
         print("Finaliza B")
         
-class C(A, B):
+class C(B):
     def __init__(self, A, B , C):
         print("Empieza C")
         super().__init__(A, B)
         print("Finaliza C")
         
-class D(A, B, C):
+class D(C):
     def __init__(self, A, B, C, D):
         print("Empieza D")
         super().__init__(A, B, C)
