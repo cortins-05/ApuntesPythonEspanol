@@ -52,7 +52,10 @@ with open('valores.bin', 'wb') as f:
     f.write(struct.pack('f', valores[2]))
     f.write(struct.pack('i', valores[3]))
 print("Valores guardados correctamente")
-
+"""
+Opcion abreviada:
+f.write(struct.pack("iffi", valores[0], valores[1], valores[2], valores[3]))
+"""
 
 #Leer datos de un fichero binario y reconstruir valores
 
@@ -66,3 +69,4 @@ print(f"Valor int 1: {valor_int1}")
 print(f"Valor float 1: {valor_float1}")
 print(f"Valor float 2: {valor_float2}")
 print(f"Valor int 2: {valor_int2}")
+
