@@ -70,3 +70,8 @@ print(f"Valor float 1: {valor_float1}")
 print(f"Valor float 2: {valor_float2}")
 print(f"Valor int 2: {valor_int2}")
 
+"""
+Opción abreviada:
+datos = f.read(struct.calcsize("iffi"))
+valor_int1,valor_float1,valor_float2,valor_int2=struct.unpack("iffi", datos)
+"""
