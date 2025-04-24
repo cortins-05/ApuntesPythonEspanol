@@ -42,7 +42,7 @@ session = Session()
 class Libro(Base):
     __tablename__ = 'Libros' #Nombre de la tabla de la base de datos
     
-    id = Column(Integer, primary_key=True)
+    id = Column(Integer, primary_key=True) #Por defecto auto_increment = True
     titulo = Column(String)
     autor = Column(String)
     año = Column(Integer)
